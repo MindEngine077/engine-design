@@ -1,0 +1,12 @@
+/* Webfont: Nomads-Regular */@font-face {
+    font-family: 'Nomads';
+    src: url('Nomads.eot'); /* IE9 Compat Modes */
+    src: url('Nomads.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Nomads.woff') format('woff'), /* Modern Browsers */
+         url('Nomads.woff2') format('woff2'), /* Modern Browsers */
+         url('Nomads.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Signal';
+    src: url('Signal-Normal.woff2') format('woff2'),
+         url('Signal-Normal.woff') format('woff');
+    font-weight: normal;  
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signal';
+    src: url('Signal-Bold.woff2') format('woff2'),
+         url('Signal-Bold.woff') format('woff');
+    font-weight: bold;  
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signal';
+    src: url('Signal-Light.woff2') format('woff2'),
+         url('Signal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signal';
+    src: url('Signal-ExtraBold.woff2') format('woff2'),
+         url('Signal-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Regular.woff2') format('woff2'),
+       url('VisiaPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Bold.woff2') format('woff2'),
+       url('VisiaPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Light.woff2') format('woff2'),
+       url('VisiaPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-ExtraBold.woff2') format('woff2'),
+       url('VisiaPro-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Medium.woff2') format('woff2'),
+       url('VisiaPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-SemiBold.woff2') format('woff2'),
+       url('VisiaPro-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Heavy.woff2') format('woff2'),
+       url('VisiaPro-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-Italic.woff2') format('woff2'),
+       url('VisiaPro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-BoldItalic.woff2') format('woff2'),
+       url('VisiaPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-LightItalic.woff2') format('woff2'),
+       url('VisiaPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'VisiaPro';
+  src: url('VisiaPro-ExtraBoldItalic.woff2') format('woff2'),
+       url('VisiaPro-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}

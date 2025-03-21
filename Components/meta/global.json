@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_meta_globals",
+  "info": {
+    "displayName": "Global_tags",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "meta_charset": {
+      "type": "string",
+      "default": "UTF-8"
+    },
+    "meta_robots": {
+      "type": "string",
+      "default": "index, follow"
+    },
+    "meta_author": {
+      "type": "string",
+      "default": "Team Mind Engine"
+    },
+    "meta_viewport": {
+      "type": "string",
+      "default": "width=device-width, initial-scale=1\">"
+    },
+    "meta_language": {
+      "type": "string",
+      "default": "en"
+    },
+    "meta_classification": {
+      "type": "string",
+      "default": "Business"
+    },
+    "meta_distribution": {
+      "type": "string",
+      "default": "Global"
+    }
+  }
+}

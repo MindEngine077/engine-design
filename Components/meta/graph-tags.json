@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_meta_graph_tags",
+  "info": {
+    "displayName": "Graph_tags"
+  },
+  "options": {},
+  "attributes": {
+    "og_title": {
+      "type": "string",
+      "default": "Mijn Website - Topproducten Online"
+    },
+    "og_description": {
+      "type": "string",
+      "default": "Ontdek de beste deals op Mijn Website!"
+    },
+    "og_url": {
+      "type": "string",
+      "default": "https://mijnwebsite.com/voorbeeld"
+    },
+    "og_type": {
+      "type": "string",
+      "default": "website"
+    },
+    "og_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

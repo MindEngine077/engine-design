@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Everything you need to know about Earth Spas." />
+    <meta name="keywords" content="Earth Spas, hot tubs, wellness, relaxation, health, hydrotherapy" />
+    <meta name="author" content="Earth Spas" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/frontend/Public/favicon.png" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/frontend/Styles/main.css" />
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" />
+    <title>Earth Spas - Inspired by Nature</title>
+  </head>
+  <body>
+    <video autoplay loop muted class="background-video" aria-hidden="true">
+      <source src="/frontend/Assets/Video/Leafs.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <header class="header" id="myHeader">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="range.html">The Range</a></li>
+          <li><a href="models.html">All Models</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="open-button" onclick="openForm()">Contact</button>
+      <hr class="divider" />
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="section-title">
+          <h2>Inspired by Nature</h2>
+          <p>Our spas are inspired by the natural beauty of the world's most stunning landscapes.</p>
+        </div>
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Kouri.png" alt="Kouri Spa" />
+        </div>
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Uluru II.png" alt="Uluru II Spa" />
+        </div>
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Mariana.png" alt="Mariana Spa" />
+        </div>
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Glencoe.png" alt="Glencoe Spa" />
+        </div>
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Ha Long Bay.png" alt="Ha Long Bay Spa" />
+        </div>
+        <div class="mySlides">
+          <img src="/frontend/Styles/Slideshow/Erebus.png" alt="Erebus Spa" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <button class="prev" onclick="plusSlides(-1)" aria-label="Previous Slide">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)" aria-label="Next Slide">&#10095;</button>
+
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Kouri.png" style="width: 100%" onclick="currentSlide(1)" alt="Thumbnail of Kouri Spa" />
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Uluru2.png" style="width: 100%" onclick="currentSlide(2)" alt="Thumbnail of Uluru II Spa" />
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Mariana.png" style="width: 100%" onclick="currentSlide(3)" alt="Thumbnail of Mariana Spa" />
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Glencoe.png" style="width: 100%" onclick="currentSlide(4)" alt="Thumbnail of Glencoe Spa" />
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Halongbay.png" style="width: 100%" onclick="currentSlide(5)" alt="Thumbnail of Ha Long Bay Spa" />
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/frontend/Assets/Polaroid/Polaroid_Erebus2.png" style="width: 100%" onclick="currentSlide(6)" alt="Thumbnail of Erebus Spa" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+  </body>
+</html>

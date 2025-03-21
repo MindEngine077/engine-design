@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styles</title>
+    <link rel="stylesheet" href="/frontend/Styles/form.css">
+    <link rel="stylesheet" href="/frontend/Styles/main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+    <script src="/frontend/Scripts/form.js" defer></script>
+</head>
+<body>
+    <form action="#" method="post" class="custom-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div class="light-button">
+                <button class="bt" type="button" title="Earth Spas Button">
+                  <div class="light-holder">
+                    <div class="dot"></div>
+                    <div class="light"></div>
+                  </div>
+                  <div class="button-holder">
+                    <p>Kouri</p>
+
+                    <img src="/frontend/Assets/Product/Corner/kern.png" alt="Earth Spas Button">
+                  </div>
+                </button>
+              </div>
+
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="dob" required>
+
+            <label for="color">Favorite Color</label>
+            <input type="color" id="color" name="favorite_color">
+
+            <label for="number">Amount</label>
+            <input type="number" id="number" name="amount" min="1" max="1000" required>
+
+            <label for="range">Range</label>
+            <input type="range" id="range" name="range" min="0" max="100" value="50">
+
+            <label for="checkbox">Accept Terms & Conditions</label>
+            <input type="checkbox" id="checkbox" name="terms" required>
+
+            <label for="textarea">Message</label>
+            <textarea id="textarea" name="message" placeholder="Your message" required></textarea>
+            <br>
+
+        <button type="button" class="button-action">Subscribe</button>
+        </fieldset>
+    </form>
+
+    <div class="tooltip" id="tooltip" role="tooltip">This is a tooltip message</div>
+</body>
+</html>

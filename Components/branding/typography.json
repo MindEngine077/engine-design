@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_branding_typographies",
+  "info": {
+    "displayName": "Typography",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Display_font": {
+      "type": "string",
+      "default": "Montserrat"
+    },
+    "Heading_font": {
+      "type": "string",
+      "default": "Roboto"
+    },
+    "Body_font": {
+      "type": "string"
+    }
+  }
+}

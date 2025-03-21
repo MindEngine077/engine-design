@@ -1,0 +1,112 @@
+
+.flex-grid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  padding: 0;
+}
+
+.flex-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  padding: 2.5vw 10vw;
+}
+
+.flex-header h2 {
+  max-width: 1200px;
+  font-size: var(--h2-size);
+  color: var(--gold-100);
+}
+
+.flex-column {
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+  margin: 0;
+  padding: 10%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    width: 100%; /* Past zich aan de breedte van de container aan */
+    height: auto; /* Houdt de aspect-ratio in stand */
+    display: block; /* Voorkomt extra witruimte onder de afbeelding */
+}
+
+
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gold-100);
+}
+
+.header-nav a {
+  font-family: var(--Lorin);
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--gold-100);
+}
+
+.header-nav a:hover {
+  color: var(--light-100);
+}

@@ -1,0 +1,18 @@
+{
+  "heroText": "Welcome to Earth Spas",
+  "heroDescription": "Earth Spas is everything a hot tub should be - and more. Ergonomic design expertise and a passion for improving the world we live in...",
+  "models": {
+    "kouri": {
+      "image": "/frontend/Assets/Models/kouri.jpg",
+      "seats": "3 people",
+      "jets": "28 Hydrotherapy Jets",
+      "features": "LED lighting, Bluetooth audio, Ozone filtration"
+    },
+    "erebus": {
+      "image": "/frontend/Assets/Models/erebus.jpg",
+      "seats": "5 people",
+      "jets": "40 Hydrotherapy Jets",
+      "features": "Aromatherapy, Waterfall, SmartTouch Controls"
+    }
+  }
+}

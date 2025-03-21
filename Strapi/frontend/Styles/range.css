@@ -1,0 +1,163 @@
+
+.range .card-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.range .card-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 12px;
+  gap: 0.5rem;
+}
+
+.range .card {
+  background-image: 
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid var(--ivory-300);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 328px;
+  max-width: 450px;
+  height: fit-content;
+  padding: 32px;
+  text-align: left;
+  width: 100%;
+}
+
+.range .card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.range .card-header a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: none;
+  font-size: var(--body-md);
+  text-decoration: none;
+}
+
+.range .card-header i {
+  font-size: var(--body-md);
+  color: var(--ivory-200);
+  margin-right: 0.5rem;
+}
+
+.range .card h3 {
+  font-size: var(--h2-size);
+  color: var(--gold-100);
+  margin-bottom: 0.5rem;
+}
+
+.range .card img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+
+.video-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navy-300);
+  font-family: var(--Glamour);
+  font-size: var(--body-sm);
+  letter-spacing: 1px;
+  color: var(--ivory-200);
+  border-radius: var(--radius-sm);
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1px;
+  color: var(--gold-100);
+  border-radius: var(--radius-sm);
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card-info p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0.5rem 0;
+  color: var(--ivory-100);
+}
+
+.card-info p i {
+  font-size: var(--body-lg);
+  color: var(--ivory-100);
+  margin-right: 0.7rem;
+}
+
+.price-info p {
+  font-family: var(--Glamour);
+  font-size: var(--body-sm);
+  color: var(--gold-100);
+  margin-bottom: 1rem;
+}
+
+
+.price-info {
+  margin: 1rem 0.1rem 1rem 0.1rem;
+}
+
+

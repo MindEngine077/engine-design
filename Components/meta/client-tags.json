@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_meta_client_tags",
+  "info": {
+    "displayName": "Client_tags"
+  },
+  "options": {},
+  "attributes": {
+    "Website_title": {
+      "type": "string",
+      "default": "Mijn website"
+    },
+    "favicon_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

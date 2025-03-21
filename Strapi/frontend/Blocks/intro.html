@@ -1,0 +1,65 @@
+<head>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/frontend/Scripts/head/head.js"></script>
+  <title>Find Spa</title>
+  <link rel="stylesheet" href="/frontend/Styles/main.css">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+  <link rel="stylesheet" href="/frontend/Styles/intro.css">
+  <script defer src="/frontend/Scripts/intro.js"></script>
+  </head>
+  <body>
+
+<div id="intro" class="intro">
+  <div class="intro-content">
+    <h2>Welcome! Choose your language</h2>
+    <div class="language-cards">
+      <!-- English Card -->
+      <div class="language-card" style="background-image: url('/frontend/Assets/Cards/2.png');">
+        <div class="snow-overlay">
+          <video autoplay loop muted class="snow-video">
+            <source src="/frontend/Assets/Snow/Snowfall.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <button onclick="setLanguage('en')" class="language-btn" id="english-btn">
+          <img src="/frontend/Assets/Flags/EN.png" alt="English Flag">
+          <p>English</p>
+        </button>
+      </div>
+
+      <!-- Dutch Card -->
+      <div class="language-card" style="background-image: url('/frontend/Assets/Cards/3.png');">
+        <div class="snow-overlay">
+          <video autoplay loop muted class="snow-video">
+            <source src="/frontend/Assets/Snow/Snowfall.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <button onclick="setLanguage('nl')" class="language-btn" id="dutch-btn">
+          <img src="/frontend/Assets/Flags/NL.png" alt="Dutch Flag">
+          <p>Nederlands</p>
+        </button>
+      </div>
+
+      <!-- German Card -->
+      <div class="language-card" style="background-image: url('/frontend/Assets/Cards/4.png');">
+        <div class="snow-overlay">
+          <video autoplay loop muted class="snow-video">
+            <source src="/frontend/Assets/Snow/Snowfall.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <button onclick="setLanguage('de')" class="language-btn" id="german-btn">
+          <img src="/frontend/Assets/Flags/DE.png" alt="German Flag">
+          <p>Deutsch</p>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

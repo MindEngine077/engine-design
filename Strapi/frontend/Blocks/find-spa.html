@@ -1,0 +1,42 @@
+<head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/frontend/Scripts/head/head.js"></script>
+<title>Find Spa</title>
+<link rel="stylesheet" href="/frontend/Styles/main.css">
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+<link rel="stylesheet" href="/frontend/Styles/find-spa.css">
+<script defer src="/frontend/Scripts/find-spa.js"></script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<hr class="divider">
+<div class="page-title">
+<h1>Find your perfect Spa</h1>
+</div>
+
+<main>
+<section class="find-spa">
+<button id="find-spa-btn">Find Your Perfect Spa</button>
+<div id="spa-form" class="hidden">
+<p>What is important to you?</p>
+<label for="spa-type">Type of Spa:</label>
+<select id="spa-type">
+<option value="jacuzzi">Jacuzzi</option>
+<option value="hot-tub">Hot Tub</option>
+</select>
+<label for="spa-budget">Budget:</label>
+<input type="range" id="spa-budget" min="1000" max="50000">
+<button onclick="findSpa()">Find Spa</button>
+</div>
+<div id="spa-results"></div>
+</section>
+</main>
+
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
+

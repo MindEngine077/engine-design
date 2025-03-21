@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/frontend/Scripts/main.js" defer></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <section class="contact-form-container">
+        <div class="section-title">
+          <h1>Contact Us</h1>
+          <p>Choose your preferred method of contact</p>
+        </div>
+
+        <div class="tabs">
+          <button class="tab-button active" onclick="openForm('contact-methods')">Direct Contact</button>
+          <button class="tab-button" onclick="openForm('showroom-visit')">Visit Showroom</button>
+          <button class="tab-button" onclick="openForm('contact-form')">Contact Form</button>
+        </div>
+
+        <!-- Direct Contact Form -->
+        <div id="contact-methods" class="form-content active">
+          <div class="contact-card">
+            <div class="card-header">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Call Us</h3>
+            </div>
+            <p>You can call us directly.</p>
+            <div class="contact-numbers">
+              <div class="contact-item">
+                <img src="/frontend/Assets/Flags/de.png" alt="German Flag" />
+                <a href="tel:+4915734394809">+49 1573 4394809</a>
+              </div>
+              <div class="contact-item">
+                <img src="/frontend/Assets/Flags/nl.png" alt="Dutch Flag" />
+                <a href="tel:+31615415079">+31 615415079</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Form -->
+          <div class="contact-card">
+            <div class="card-header">
+              <i class="fab fa-whatsapp"></i>
+              <h3>Send WhatsApp</h3>
+            </div>
+            <p>Send us a WhatsApp. We will respond as soon as possible.</p>
+            <a href="https://wa.me/4915734394809" rel="noopener" class="whatsapp-button">Send WhatsApp</a>
+          </div>
+
+          <!-- Email Form -->
+          <div class="contact-card">
+            <div class="card-header">
+              <i class="fas fa-envelope"></i>
+              <h3>Send Mail</h3>
+            </div>
+            <p>Send us an email. We will respond as soon as possible.</p>
+            <a href="mailto:contact@example.com" class="email-button">Send Mail</a>
+          </div>
+        </div>
+
+        <!-- Showroom Visit Form -->
+        <div id="showroom-visit" class="form-content">
+          <h2>Visit our Showroom</h2>
+          <label for="visit-date">Select a date for your visit</label>
+          <input type="date" id="visit-date" title="Choose a date for your showroom visit" />
+          <button onclick="confirmVisit()">Confirm Visit</button>
+          <div id="available-times"></div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contact-form" class="form-content">
+          <h2>Contact Us</h2>
+          <form id="contact-us-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required />
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="country">Country</label>
+            <input type="text" id="country" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <button type="button" onclick="clearForm()">Clear Form</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <hr class="divider" />
+    <script src="/frontend/Scripts/footer.js"></script>
+    <script>
+      // Current problematic code
+      if (window.location.pathname === "/index.html") {
+          // Switch to hero video...
+      }
+    </script>
+  </body>
+</html>

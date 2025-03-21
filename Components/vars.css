@@ -1,0 +1,100 @@
+:root {
+  --primary-100: #ea7c8f;
+  --primary-200: #e56b7e;
+  --primary-300: #e05a6d;
+  --secondary-100: #7ed4d6;
+  --secondary-200: #6ec7c9;
+  --secondary-300: #5ebacb;
+  --light-100: #f7f5ea;
+  --light-200: #f0ecd9;
+  --light-300: #e9e6c8;
+  --dark-100: #212121;
+  --dark-200: #171717;
+  --dark-300: #121212;
+  --surface-100: #2e3850;
+  --surface-200: #2a3350;
+  --surface-300: #263050;
+  --background-100: #0d111a;
+  --background-200: #0a0d14;
+  --background-300: #070a0f;
+}
+
+:root {
+  --rad-none: 0;
+  --rad-sm: 3px;
+  --rad-md: 5px;
+  --rad-lg: 8px;
+  --rad-xl: 12px;
+  --rad-round: 50%;
+}
+
+:root {
+  --me-avatar-xl: 3rem;
+  --me-avatar-lg: 32px;
+  --me-avatar-md: 1.5rem;
+  --me-avatar-sm: 1rem;
+}
+
+:root {
+  --me-logo-xxl: 240px;
+  --me-logo-xl: 180px;
+  --me-logo-lg: 140px;
+  --me-logo-md: 120px;
+  --me-logo-sm: 80px;
+  --me-logo-xs: 64px;
+  --me-logo-xxs: 48px;
+}
+
+:root {
+  --background-color: var(--background-100);
+  --text-color: var(--light-200);
+  --heading-color: var(--primary-200);
+  --link-color: var(--secondary-200);
+  --primary-btn-bg: var(--primary-200);
+  --primary-btn-color: var(--light-300);
+  --secondary-btn-bg: var(--secondary-200);
+  --secondary-btn-color: var(--surface-200);
+  --light-btn-bg: var(--light-200);
+  --light-btn-color: var(--primary-200);
+  --dark-btn-bg: var(--surface-200);
+  --dark-btn-color: var(--primary-200);
+  --surface-color: var(--surface-300);
+  --label-color: var(--light-200);
+}
+
+:root {
+  --heading-font: "Signal", sans-serif;
+  --body-font: "VisiaPro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a,
+li,
+input,
+button {
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--text-color);
+}
+
+
+:root {
+  --me-font-base: 1rem;
+  --me-font-4xl: 2.25rem;
+}

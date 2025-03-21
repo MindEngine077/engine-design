@@ -1,0 +1,196 @@
+.open-button {
+  width: 100px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: var(--body-lg);
+  color: var(--gold-100);
+  border: 1px solid var(--gold-100);
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.popup-form.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.contact-form {
+  width: 50%;
+  max-width: 800px;
+  min-width: 340px;
+  height: 100%;
+  margin: 32px auto;
+  padding: 20px;
+  background-image: url("/frontend/Assets/Images/Stripe-01.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.47), 15px 15px 25px rgba(14, 161, 161, 0.47);
+}
+
+/* Fieldset and Legend */
+.popup-form fieldset {
+  border: 2px solid var(--gold-100);
+  padding: 24px 32px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.popup-form legend {
+  font-size: 1.5rem;
+  color: var(--gold-100);
+  padding: 0 10px;
+}
+
+/* Label Styles */
+.popup-form label {
+  font-family: var(--Lorin);
+  font-size: var(--body-lg);
+  display: block;
+  margin-bottom: 4px;
+  font-weight: semi-bold;
+  color: var(--ivory-100);
+}
+
+.popup-form,
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="color"],
+input[type="number"],
+input[type="range"],
+input[type="checkbox"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid var(--grey-300);
+  background-color: var(--ivory-100);
+  color: var(--ivory-100);
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-size: var(--body-md);
+}
+
+/* Textarea Styling */
+.popup-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Placeholder Text */
+.popup-form input::placeholder,
+.popup-form textarea::placeholder {
+  color: var(--gold-300);
+  text-indent: 16px;
+}
+
+/* Focus States for Inputs */
+.popup-form input:focus,
+.popup-form textarea:focus {
+  outline: none;
+  border-color: var(--gold-100);
+}
+
+/* Style for the form labels, required icons and feedback messages */
+.popup-form input:invalid,
+.popup-form textarea:invalid {
+  border-color: var(--gold-300);
+}
+
+.popup-form input:valid,
+.popup-form textarea:valid {
+  border-color: var(--green-100);
+}
+
+.button-action {
+  width: 140px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: var(--body-lg);
+  color: var(--gold-100);
+  border: 1px solid var(--gold-100);
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.popup-form .button-action::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 75%;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.popup-form .button-action:hover::before {
+  scale: 3;
+}
+
+.popup-form .button-action:hover {
+  color: var(--navy-100);
+  scale: 0.9;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.popup-form .button-action:active {
+  scale: 1;
+}
+
+.logo,
+.popup-form img {
+  filter: brightness(0) saturate(100%) invert(100%);
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+/* Fix for overlay background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

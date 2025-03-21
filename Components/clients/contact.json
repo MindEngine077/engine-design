@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_clients_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "contact_person": {
+      "type": "string",
+      "default": "John Doe"
+    },
+    "contact_mail": {
+      "type": "email",
+      "default": "name@company.com",
+      "unique": true
+    },
+    "contact_phone": {
+      "type": "string",
+      "default": "+31 6 00 00 00 00"
+    },
+    "company_website": {
+      "type": "string",
+      "default": "Website url"
+    }
+  }
+}

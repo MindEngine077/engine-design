@@ -1,0 +1,32 @@
+/* Avatars */
+
+.ME-avatar-xl {
+    width: var(--me-avatar-xl);
+    height: var(--me-avatar-xl);
+    border-radius: var(--rad-round);
+    border: 2px solid var(--light-200);
+}
+
+.ME-avatar-lg {
+    width: var(--me-avatar-lg);
+    height: var(--me-avatar-lg);
+    border-radius: var(--rad-round);
+    border: 1.75px solid var(--light-200);
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.ME-avatar-md {
+    width: var(--me-avatar-md);
+    height: var(--me-avatar-md);
+    border-radius: var(--rad-round);
+    border: 1.5px solid var(--light-200);
+}
+
+.ME-avatar-sm {
+    width: var(--me-avatar-sm);
+    height: var(--me-avatar-sm);
+    border-radius: var(--rad-round);
+    border: 1px solid var(--light-200);
+}
+

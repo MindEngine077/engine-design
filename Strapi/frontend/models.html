@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Models Page</title>
+    <script src="/frontend/Scripts/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="models">
+        <div class="tablinks">
+          <button class="tablink" onclick="openPage('Kouri', this, 'model1')">Kouri</button>
+          <button class="tablink" onclick="openPage('Erebus', this, 'model2')" id="defaultOpen">Erebus</button>
+          <button class="tablink" onclick="openPage('Uluru', this, 'model3')">Uluru</button>
+          <button class="tablink" onclick="openPage('Erebus II', this, 'model4')">Erebus II</button>
+          <button class="tablink" onclick="openPage('Uluru II', this, 'model5')">Uluru II</button>
+          <button class="tablink" onclick="openPage('Mariana', this, 'model6')">Mariana</button>
+          <button class="tablink" onclick="openPage('Glencoe', this, 'model7')">Glencoe</button>
+          <button class="tablink" onclick="openPage('Ha Long Bay', this, 'model8')">Ha Long Bay</button>
+          <button class="tablink" onclick="openPage('Kern River', this, 'model9')">Kern River</button>
+        </div>
+
+        <!-- Dynamically loaded content will appear here -->
+        <div id="Kouri" class="tabcontent"></div>
+        <div id="Erebus" class="tabcontent"></div>
+        <div id="Uluru" class="tabcontent"></div>
+        <div id="Erebus II" class="tabcontent"></div>
+        <div id="Uluru II" class="tabcontent"></div>
+        <div id="Mariana" class="tabcontent"></div>
+        <div id="Glencoe" class="tabcontent"></div>
+        <div id="Ha Long Bay" class="tabcontent"></div>
+        <div id="Kern River" class="tabcontent"></div>
+      </section>
+    </main>
+  </body>
+</html>

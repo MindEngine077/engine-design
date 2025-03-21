@@ -1,0 +1,652 @@
+/* Basis styling voor de sectie */
+.parallax-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px; /* Hoogte van de sectie */
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay; 
+    background-color:rgba(0, 0, 0, 0.74)left, rgba(0, 0, 0, 0.84)right;
+    overflow: hidden;
+    margin-bottom: 64px;
+  }
+  
+  /* Styling voor de inhoud binnen de sectie */
+  .parallax-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Zorg ervoor dat de tekst bovenop de achtergrond ligt */
+  }
+  
+  /* Specifieke stijlen voor de header */
+  .parallax-section h2 {
+    color: var(--gold-100);
+    margin: 0;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.78), -12px -12px 40px rgba(93, 255, 223, 0.53), 3px 3px 3px rgba(0, 0, 0, 0.64);
+  }
+  
+  /* Als je wat ruimte onder de tekst wilt */
+  .parallax-section p {
+    font-size: var(--body-lg);
+    font-weight: var(--font-medium);
+    margin-top: 20px;
+    color: var(--light-200);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.78);
+  }
+  
+
+
+  /* Fullscreen intro popup */
+.intro {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.8); /* Start met kleine schaal */
+  transition: opacity 1s ease, transform 1s ease; /* Voeg een overgang voor opacity en schaal toe */
+  z-index: 99999; /* Zorg ervoor dat de intro boven alles komt */
+}
+
+.intro.active {
+  display: flex;
+  opacity: 1; /* Zet de opacity naar 1 */
+  transform: scale(1); /* Zet de schaal naar normaal */
+}
+
+/* Intro content styling */
+.intro-content {
+  background-image: url("../Assets/Hero/hero-12.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+  animation: fadeIn 1s ease forwards; /* Toevoegen van fade-in animatie voor de inhoud */
+}
+
+/* Animatie voor fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.language-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.language-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--light-400);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect voor language card */
+.language-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Snow overlay styling */
+.snow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+
+/* Styling voor de sneeuw video */
+.snow-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Show the snow video when hovering over the card */
+.language-card:hover .snow-overlay {
+  display: block;
+}
+
+.intro-content h2 {
+  font-family: var(--Urbanist);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--light-400);
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.intro-content p {
+  font-family: var(--Montserrat);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light-200);
+}
+
+/* Styling for each language button */
+.language-btn {
+  margin-top: 20%;
+  padding: 15px 30px;
+  font-size: var(--h3-size);
+  font-family: var(--Urbanist);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--secondary-200);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  box-shadow: none;
+}
+
+.language-btn img {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 150px;
+  transition: transform 0.3s ease;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+}
+
+.language-btn:hover {
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+.language-btn:active {
+  transform: scale(0.98); /* Shrinks when clicked */
+}
+
+
+
+
+.flip-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+/* .flip-card-container */
+.flip-card-container {
+--font-Urbanist: var(--Glamour);
+  --hue: 150;
+  --primary: hsl(var(--hue), 50%, 50%);
+  --white-1: var(--primary-200);
+  --white-2: var(--primary-100);
+  --dark: hsl(var(--hue), 25%, 10%);
+  --grey: hsl(0, 0%, 50%);
+  width: 310px;
+  height: 500px;
+  margin: 40px;
+  perspective: 1000px;
+}
+
+/* .flip-card */
+.flip-card {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.flip-cards .card-front,
+.flip-cards .card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background: var(--dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .card-front */
+.flip-cards .card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .card-back */
+.flip-cards .card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* figure */
+.flip-cards figure {
+  z-index: -1;
+}
+
+/* figure, .img-bg */
+.flip-cards figure,
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* img */
+.flip-cards img {
+  height: 100%;
+  border-radius: 24px;
+}
+
+/* figcaption */
+.flip-cards figcaption {
+  display: block;
+  width: auto;
+  margin-top: 12%;
+  padding: 8px 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  color: var(--gold-100);
+  background: hsla(var(--hue), 25%, 10%, .5);
+border-radius: var(--radius-sm);
+}
+
+/* .img-bg */
+.flip-cards.img-bg {
+  background: hsla(var(--hue), 25%, 10%, .5);
+}
+
+.flip-cards .card-front .img-bg {
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+}
+
+.flip-cards .card-front .img-bg::before {
+  content: "";
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(18deg);
+
+  width: 100%;
+  height: 6px;
+  border: 1px solid var(--primary-300);
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  transition: .1s;
+}
+
+.flip-cards .card-back .img-bg {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+}
+
+/* hover state */
+.flip-cards .flip-card-container:hover .card-front .img-bg::before {
+  width: 6px;
+  border-left-color: var(--primary-300);
+  border-right-color: var(--primary-100);
+}
+
+/* ul */
+.flip-cards ul {
+  padding-top: 50%;
+  margin: 0 auto;
+  width: 50%;
+  height: 80%;
+  padding-bottom: 10%;  
+  list-style: none;
+  color: var(--gold-100);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* li */
+.flip-cards li {
+  width: 100%;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  position: relative;
+}
+
+.flip-cards li:nth-child(2n) {
+  color: var(--primary-300);
+}
+
+.flip-cards li:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: currentColor;
+  opacity: .2;
+}
+
+/* button */
+.flip-cards button {
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--gold-100);
+  font-size: 16px;
+
+  letter-spacing: 2px;
+
+  padding: 9px 20px;
+  border: 1px solid var(--gold-100);
+  border-radius: 1000px;
+  background: transparent;
+  transition: .3s;
+
+  cursor: pointer;
+}
+
+.flip-cards button:hover,
+.flip-cards button:focus {
+  color: var(--primary-300);
+  background: hsla(var(--hue), 25%, 10%, .2);
+  border-color: currentColor;
+}
+
+.flip-cards button:active {
+  transform: translate(2px);
+}
+
+/* .design-container */
+.design-container {
+  --tr: 90;
+  --op: .5;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+/* .design */
+.design {
+  display: block;
+
+  background: var(--ivory-100);
+  position: absolute;
+
+  opacity: var(--op);
+  transition: .3s;
+}
+
+.design--1,
+.design--2,
+.design--3,
+.design--4 {
+  width: 2px;
+  height: 100%;
+}
+
+.design--1,
+.design--2 {
+  top: 0;
+  transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%))
+}
+
+.design--1 {
+  left: 20%;
+}
+
+.design--2 {
+  left: 80%;
+}
+
+.design--3,
+.design--4 {
+  bottom: 0;
+  transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design--3 {
+  left: 24%;
+}
+
+.design--4 {
+  left: 76%;
+}
+
+.design--5,
+.design--6,
+.design--7,
+.design--8 {
+  width: 100%;
+  height: 2px;
+}
+
+.design--5,
+.design--6 {
+  left: 0;
+  transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+}
+
+.design--5 {
+  top: 41%;
+}
+
+.design--6 {
+  top: 59%;
+}
+
+.design--7,
+.design--8 {
+  right: 0;
+  transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%))
+}
+
+.design--7 {
+  top: 44%;
+}
+
+.design--8 {
+  top: 56%;
+}
+
+/* states */
+.flip-cards button:hover+.design-container,
+.flip-cards button:active+.design-container,
+.flip-cards button:focus+.design-container {
+  --tr: 20;
+  --op: .7;
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: var(--light-200);
+  font-size: 16px;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+
+
+/* Slides */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+}
+
+/* Navigatieknoppen */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 12px 16px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  background:  none;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.prev:hover, .next:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Caption-box */
+.caption-container {
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  var(--ivory);
+  color: var(--navy);
+  padding: 12px;
+  font-size: 24px;
+  margin-top: -5px;
+  margin-bottom: 48px;
+}
+
+/* Thumbnail container */
+.row {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* Thumbnails: GROTER & BETER ZICHTBAAR */
+.column {
+  flex: 1;
+  max-width: 200px;
+  height: 200px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.active, .column img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVITEIT: Mobiele fixes */
+@media screen and (max-width: 768px) {
+  .prev, .next {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .caption-container {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .column {
+    max-width: 100px; /* Kleiner op mobiel */
+  }
+  
+  .column img {
+    height: 70px;
+  }
+}

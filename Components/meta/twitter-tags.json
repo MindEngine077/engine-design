@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_meta_twitter_tags",
+  "info": {
+    "displayName": "Twitter_tags"
+  },
+  "options": {},
+  "attributes": {
+    "twitter_card": {
+      "type": "string",
+      "default": "summary_large_image\""
+    },
+    "twitter_title": {
+      "type": "string",
+      "default": "Mijn Website - Beste Deals"
+    },
+    "twitter_description": {
+      "type": "string",
+      "default": "De beste producten tegen de laagste prijzen!"
+    },
+    "twitter_image": {
+      "type": "string",
+      "default": "https://mijnwebsite.com/twitter-image.jpg"
+    },
+    "twitter_site": {
+      "type": "string",
+      "default": "@mijnwebsite"
+    }
+  }
+}

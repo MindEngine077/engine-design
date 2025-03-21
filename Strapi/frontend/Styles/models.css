@@ -1,0 +1,251 @@
+.tablinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: auto;
+  padding: 0;
+}
+
+.tablink {
+  font-family: var(--Glamour);
+  font-size: var(--h6-size);
+  background: none;
+  color: var(--gold-100);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.tablink:hover {
+  border-bottom: 3px solid var(--gold-100);
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  height: fit-content;
+}
+
+/* Show the content for Erebus tab by default */
+#Erebus {
+  display: block;
+}
+
+/* Optional: Active tab style */
+.tablink.active {
+  border-bottom: 3px solid var(--ivory-100);
+}
+
+.models {
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  color: var(--ivory-100);
+}
+
+/* Overall styles for the card */
+.models .card {
+  gap: 0.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--ivory-100);
+  padding: 1rem;
+  margin: 4vw 6vw;
+}
+
+.models .card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.models .card-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.models .card h2 {
+  font-size: var(--h2-size);
+  margin: 2rem 0 1rem 0;
+}
+
+.models .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.models .card a {
+  width: fit-content;
+  height: 100%;
+  background-color: var(--ivory-100);
+  font-family: var(--Glamour);
+  font-size: var(--body-sm);
+  font-weight: var(--font-semibold);
+  letter-spacing: 1px;
+  color: var(--navy-100);
+  border-radius: var(--radius-sm);
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.models .card i {
+  font-size: var(--body-lg);
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--light-200);
+  text-underline-offset: 0.2rem;
+}
+
+.models .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+  text-align: left;
+}
+
+.models .card a:hover {
+  opacity: 0.7;
+}
+
+.models .card-info p {
+  font-size: var(--body-xl);
+  padding: 0;
+  margin: 0.5rem 0;
+  color: var(--ivory-100);
+}
+
+.models .card-info p i {
+  font-size: var(--body-lg);
+  color: var(--ivory-100);
+  margin-right: 0.7rem;
+}
+
+.price-info {
+  font-family: var(--Glamour);
+  font-size: var(--body-sm);
+  color: var(--ivory-100);
+}
+
+section .specs-divider {
+  width: 100%;
+  height: 2px;
+  color: var(--green-100);
+  margin: 1rem 0;
+}
+
+.specs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 0.5rem;
+  margin-bottom: 4vw;
+}
+
+.specs-list {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 24px 12px;
+  background: none;
+}
+
+.models .spec-list hr {
+  width: 100%;
+  height: 2px;
+  color: var(--ivory-100);
+}
+
+.list-divider {
+  width: 100%;
+  height: 0.25px;
+  color: var(--ivory-100);
+}
+
+.specs-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--body-sm);
+  font-family: var(--Lorin);
+  font-weight: var(--font-regular);
+  letter-spacing: 0.25px;
+  color: var(--gold-100);
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+.specs-list li i {
+  font-size: var(--body-md);
+  color: var(--gold-100);
+  margin-right: 0.5rem;
+}
+
+.specs-list li span {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: var(--body-md);
+  font-family: var(--Lorin);
+  color: var(--ivory-100);
+  font-weight: var(--font-regular);
+}
+
+.color-cards {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.color-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.color-card p {
+  font-size: var(--body-md);
+  font-weight: var(--font-regular);
+  color: var(--light-100);
+  padding-left: 15%;
+  margin: 0;
+}
+
+.color-card img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_branding_colors",
+  "info": {
+    "displayName": "Colors",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "primary_color": {
+      "type": "string",
+      "default": "#F2D9A7"
+    },
+    "secondary_color": {
+      "type": "string",
+      "default": "#F2D9A7"
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "accent_color": {
+      "type": "string",
+      "default": "#F2D9A7"
+    },
+    "surface_color": {
+      "type": "string",
+      "default": "#F2D9A7"
+    },
+    "heading_color": {
+      "type": "string"
+    },
+    "text_color": {
+      "type": "string"
+    },
+    "link_color": {
+      "type": "string"
+    },
+    "button_color": {
+      "type": "string"
+    },
+    "alternative_color": {
+      "type": "string"
+    }
+  }
+}

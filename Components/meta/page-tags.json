@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_meta_page_tags",
+  "info": {
+    "displayName": "Page_tags"
+  },
+  "options": {},
+  "attributes": {
+    "meta_description": {
+      "type": "string",
+      "default": "Koop de beste producten online bij Mijn Website. Gratis verzending en 24/7 support!"
+    },
+    "og_description": {
+      "type": "string",
+      "default": "Koop de beste producten online bij Mijn Website. Gratis verzending en 24/7 support!"
+    },
+    "twitter_description": {
+      "type": "string",
+      "default": "Koop de beste producten online bij Mijn Website. Gratis verzending en 24/7 support!"
+    },
+    "page_title": {
+      "type": "string",
+      "default": "/home"
+    }
+  }
+}

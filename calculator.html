@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive design calculators">
+  <meta name="keywords" content="CSS, responsive design, calculator">
+  <meta name="author" content="Mind Engine B.V.">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="3 month">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"/>
+  <link rel="stylesheet" href="/Components/style.css">
+  <link rel="stylesheet" href="/ME-framework.css">
+  <link rel="icon" href="/Assets/engine.png" type="image/x-icon">
+  <title>Mind Engine Framework</title>
+</head>
+<body>
+  <header class="ME-header">
+  <div class="ME-page-title">
+    <h1>Mind Engine Framework</h1>
+  </div>
+  </header>
+
+  <nav class="ME-desktop-nav">
+    <ul class="ME-nav-links">
+      <li class="ME-nav-item"><a class="ME-nav-link" href="index.html">Home</a></li>
+      <li class="ME-nav-item"><a class="ME-nav-link" href="calculator.html">Calculator</a></li>
+      <li class="ME-nav-item"><p class="ME-nav-title">Calculator</p></li>
+      <li class="ME-nav-item"><a class="ME-nav-link" href="typography.html">Typography</a></li>
+      <li class="ME-nav-item"><a class="ME-nav-link" href="pallets.html">Pallets</a></li>
+    </ul>
+  </nav>
+
+  <main class="ME-main">
+   <section class="ME-section">
+    <div class="ME-section-title">
+        <h2>Responsive design calculators</h2>
+        <p>Use these calculators to convert between different units of measurement in CSS.</p>
+    </div>
+  <div class="ME-section-row">
+    <div class="ME-col-box">
+        <label class="ME-form-label" class="ME-form-label" for="pixelInput class="ME-form-input"">Pixels (px):</label>
+        <input class="ME-form-input" type="number" id="pixelInput class="ME-form-input"" placeholder="e.g. 16">
+
+        <button onclick="convertToRem()">Convert to REM</button>
+        <p>Result: <span id="remResult">-</span> rem</p>
+        </div>
+
+    <div class="ME-col-box">
+        <label class="ME-form-label" for="containerWidth">Container Width (px):</label>
+        <input class="ME-form-input" type="number" id="containerWidth" placeholder="e.g. 1200">
+        
+        <label class="ME-form-label" for="elementWidth">Element Width (px):</label>
+        <input class="ME-form-input" type="number" id="elementWidth" placeholder="e.g. 300">
+        
+        <button onclick="calculatePercentage()">Convert to %</button>
+        <p>Result: <span id="percentageResult">-</span>%</p>
+
+    </div>
+
+    <div class="ME-col-box">
+
+        <label class="ME-form-label" for="viewportValue">Pixels (px) to VW/VH:</label>
+        <input class="ME-form-input" type="number" id="viewportValue" placeholder="e.g. 100">
+        
+        <label class="ME-form-label" for="viewportType">Viewport Type:</label>
+        <select id="viewportType">
+            <option value="vw">VW</option>
+            <option value="vh">VH</option>
+        </select>
+        
+        <button onclick="convertToViewport()">Convert</button>
+        <p>Result: <span id="viewportResult">-</span></p>
+    </div>
+  </div>
+   </section>
+ </main>
+
+
+
+
+    <footer>
+        <p>Created by Mind Engine B.V.</a></p>
+    </footer>
+    <script src="calculator.js"></script>
+</body>
+</html>

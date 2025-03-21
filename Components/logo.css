@@ -1,0 +1,43 @@
+
+.ME-logo-xxl {
+    width: var(--me-logo-xxl);
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.ME-logo-xl {
+    width: var(--me-logo-xl);
+    height: var(--me-logo-xl);
+    padding: 0;
+    margin: 0;
+}
+
+.ME-logo-lg {
+    width: var(--me-logo-lg);
+    height: var(--me-logo-lg);
+    padding: 0;
+    margin: 0;
+}
+
+.ME-logo-md {
+    width: var(--me-logo-md);
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.ME-logo-sm {
+    width: var(--me-logo-sm);
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.ME-logo-xs {
+    width: var(--me-logo-xs);
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
